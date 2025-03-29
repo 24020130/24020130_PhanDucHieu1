@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="GameCpp2" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug Win32">
+				<Option output="../Debug/GameCpp2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Debug/" />
+				<Option deps_output="../Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-DWIN32" />
+					<Add option="-D_DEBUG" />
+					<Add option="-D_CONSOLE" />
+					<Add option="-O0" />
+					<Add option="-Wall" />
+					<Add directory="../LibSdl2/SDL2-2.0.8/include/" />
+					<Add directory="../LibSdl2/SDL2_image-2.0.3/include/" />
+					<Add directory="../LibSdl2/SDL2_mixer-2.0.2/include/" />
+					<Add directory="../LibSdl2/SDL2_ttf-2.0.14/include/" />
+					<Add directory="$(IncludePath)/" />
+				</Compiler>
+				<Linker>
+					<Add library="SDL2.lib" />
+					<Add library="SDL2main.lib" />
+					<Add library="SDL2_image.lib" />
+					<Add library="SDL2_mixer.lib" />
+					<Add library="SDL2_ttf.lib" />
+					<Add library="winmm.lib" />
+					<Add library="comctl32.lib" />
+					<Add library="kernel32.lib" />
+					<Add library="user32.lib" />
+					<Add library="gdi32.lib" />
+					<Add library="winspool.lib" />
+					<Add library="comdlg32.lib" />
+					<Add library="advapi32.lib" />
+					<Add library="shell32.lib" />
+					<Add library="ole32.lib" />
+					<Add library="oleaut32.lib" />
+					<Add library="uuid.lib" />
+					<Add library="odbc32.lib" />
+					<Add library="odbccp32.lib" />
+					<Add directory="../LibSdl2/SDL2_ttf-2.0.14/lib/x86/" />
+					<Add directory="../LibSdl2/SDL2_image-2.0.3/lib/x86/" />
+					<Add directory="../LibSdl2/SDL2_mixer-2.0.2/lib/x86/" />
+					<Add directory="../LibSdl2/SDL2-2.0.8/lib/x86/" />
+					<Add directory="$(LibraryPath)/" />
+				</Linker>
+			</Target>
+			<Target title="Release Win32">
+				<Option output="../Release/GameCpp2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Release/" />
+				<Option deps_output="../Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-D_CONSOLE" />
+					<Add option="-O1" />
+					<Add option="-Wall" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="winmm.lib" />
+					<Add library="comctl32.lib" />
+					<Add library="kernel32.lib" />
+					<Add library="user32.lib" />
+					<Add library="gdi32.lib" />
+					<Add library="winspool.lib" />
+					<Add library="comdlg32.lib" />
+					<Add library="advapi32.lib" />
+					<Add library="shell32.lib" />
+					<Add library="ole32.lib" />
+					<Add library="oleaut32.lib" />
+					<Add library="uuid.lib" />
+					<Add library="odbc32.lib" />
+					<Add library="odbccp32.lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="BaseObject.cpp" />
+		<Unit filename="BaseObject.h" />
+		<Unit filename="BossObject.cpp" />
+		<Unit filename="BossObject.h" />
+		<Unit filename="BulletObject.cpp" />
+		<Unit filename="BulletObject.h" />
+		<Unit filename="CommonFunc.cpp" />
+		<Unit filename="CommonFunc.h" />
+		<Unit filename="ExplosionObject.cpp" />
+		<Unit filename="ExplosionObject.h" />
+		<Unit filename="Geometric.cpp" />
+		<Unit filename="Geometric.h" />
+		<Unit filename="HeartItem.cpp" />
+		<Unit filename="HeartItem.h" />
+		<Unit filename="ImpTimer.cpp" />
+		<Unit filename="ImpTimer.h" />
+		<Unit filename="MainObject.cpp" />
+		<Unit filename="MainObject.h" />
+		<Unit filename="PlayerPower.cpp" />
+		<Unit filename="PlayerPower.h" />
+		<Unit filename="TextObject.cpp" />
+		<Unit filename="TextObject.h" />
+		<Unit filename="ThreatsObject.cpp" />
+		<Unit filename="ThreatsObject.h" />
+		<Unit filename="game_map.cpp" />
+		<Unit filename="game_map.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="stdafx.cpp" />
+		<Unit filename="stdafx.h" />
+		<Unit filename="targetver.h" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
